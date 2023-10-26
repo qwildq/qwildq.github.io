@@ -1,4 +1,4 @@
-function RoomService(url = "ws://localhost") {
+function RoomService(url = "wss://localhost") {
     this.url = url;
     this.onmessage = () => { };
     this.buffer = [];
