@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="roomservice.js"></script>
+    <script src="script.js" async defer></script>
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="username-contaier" style="display: none">
+        <span>enter a username:</span>
+        <input class="username-input" />
+        <span>enter a room:</span>
+        <input class="room-input" value="default"/>
+        <button class="go-button">go!</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="users"></div>
+      <div id="messages"></div>
+      <div id="messagebox">
+        <div contenteditable="true" id="input"></div>
+        <button id="send" onclick="send()">send</button>
+      </div>
+    </div>
+  </body>
+</html>
